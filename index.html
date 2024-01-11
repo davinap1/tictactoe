@@ -14,4 +14,33 @@ meta tag used to control the viewport behavior on mobile devices, ensures that t
 link rel stylesheet links an external style sheet named style.css to the HTML document, the styles defined in the CSS file will be applied to the HTML content allowing for consistent and separated styling 
 link rel preconnect establishes a preconnection to the google font APIs and tells the browser to initiate a connected to the specified URL early in the process which can help improve the loading speed of web fonts. The crossorigin attribute is used to allow cross-origin requests for preconnection. Cross-origin requests is when it is initiated from one domain or origin and is directed toward a different domain. This is a fundamental security feature implemented by web browsers to prevent potentially malicious behavior.  
   --> 
+  <body>
+    <main class="background">
+      <section class="title">
+        <h1> Tic-Tac-Dog </h1>
+      </section>
+      <section class = "display">
+        Player <span class="display-player playerX">X</span>'s turn
+      </section>
+  <!-- the class attribute in HTML is used to assign one or more classes names to an HTML element. Classes are used for styling purposes in CSS or for selecting and manipulating elements using JS. 
+      class="title" is applied to the section element indicating that this section might be styled or manipulated as a title section. 
+      The span element is an inline HTML element used to group inline elements and apply styles to specific part of the text. It does not add any structural meaning to the document. section class= "display" has two class names: display-player and playerX. Display player is part of a group of elements related to displaying information about the player. PlayerX is used for style or scripting purposes. -->
+       <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+  <!-- the class container is likely used to group and style a set of related elements. The class name container indicates that it serves as a container for specific content. I.e grid or layout of tiles --> 
+      <section class= "display announcer hide"></section>
+      <section class="controls">
+        <button id= "reset">Reset</button>
+      </section>
+    </main>
+  </body>
 </head>
