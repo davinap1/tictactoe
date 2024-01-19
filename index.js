@@ -30,6 +30,13 @@ window.addEventListener('DOMContentLoaded', () => {
         [0, 4, 8],
         [2, 4, 6]
     ];
+    <!-- 
+1. Event listener: the event listener ensures that the enclosed code is executed when the DOM content has been fully loaded. It's a common to place JS that interacts with the DOM inside this type of event listener to ensure that the elements are available for manipulation. 
+
+2. DOM Element selection:
+lines select and store reference to various DOM elements using document.query selector and document.querySelectorAll. The elem selected include individual tiles, player display, reset button, and the announcer element. 
+                        -->
+                        
 
     function handleResultValidation() {
         let roundWon = false;
